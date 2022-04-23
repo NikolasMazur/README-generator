@@ -68,7 +68,14 @@ const questions = () => {
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    questions()
+        .then((response) => generateMarkdown(response))
+        .then((rtf) => {
+            writeToFile(rtf);
+            console.log("README.md successfully generated.");
+        });
+}
 
 // Function call to initialize app
 init();
