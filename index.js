@@ -41,12 +41,12 @@ const questions = () => {
             name: "license",
             choices: [
                 "MIT",
-                "APACHE (2.0)",
-                "GPL (3.0)",
-                "BSD (3)",
-                "MPL (2.0)",
-                "CDDL (1.0)",
-                "EPL (2.0)",
+                "APACHE",
+                "GPL",
+                "BSD",
+                "MPL",
+                "CDDL",
+                "EPL",
                 "None"
             ],
             message: "Please select a license.",
@@ -65,7 +65,6 @@ const questions = () => {
 };
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
