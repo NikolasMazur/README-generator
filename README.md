@@ -13,4 +13,7 @@ For visual reference: ![](./assets/placeholder.gif)
 For additional information you can reach out at the GitHub account "NikolasMazur".
 
 ## To-do
-Due to poor planning (again) and time constraints the dashboard is missing three minor, yet still important, aspects of the planned site. Those being local storage for previous searches, general styling for the page, and undefined UV Index numbers.
+As of right now the application is missing three components.
+1. The license generation based off of picked license needs to be finalized
+2. The function to write to the README is currently having an argumemnt error that needs to be resolved
+3. A GIF to show application functionality
