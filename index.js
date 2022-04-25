@@ -1,7 +1,7 @@
 // Packages needed
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("./utils/generateMarkdown.");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // Array of questions for user input
 const questions = () => {
@@ -66,7 +66,7 @@ const questions = () => {
     .then((answers) => {
         const markdownPage = generateMarkdown(answers);
     
-        fs.writeFile("./README.md", markdownPage,
+        fs.writeFile("./testREADME.md", markdownPage,
             function(err) {
                 if (err) throw err;
                 console.log("README successfully generated.")
