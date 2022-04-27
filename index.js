@@ -126,15 +126,23 @@ const questions = () => {
             }
         }
     ])
-    
-    // Writes README file
-    .then((answers) => {
-        const markdownPage = generateMarkdown(answers);
-        fs.writeFile("testREADME.md", markdownPage, (err) =>
-            err ? console.log(err) : console.log(questions)
-        );
-      });
 };
+
+// Writes README file
+const writeToFile = data => {
+    return new Promise((resolve, reject) => {
+      fs.writeFile("./generatedREADME.md", data, err => {
+        if (err) {
+          reject(err);
+          return;
+        }
+        resolve({
+          ok: true,
+          message: "File generated.",
+        });
+      });
+    });
+  };
 
 // Creates a function to initialize app
 function init() {
