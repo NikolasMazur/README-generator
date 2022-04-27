@@ -130,8 +130,8 @@ const questions = () => {
     // Writes README file
     .then((answers) => {
         const markdownPage = generateMarkdown(answers);
-        fs.writeFile("./testREADME.md", markdownPage, (err) =>
-            err ? console.log(err) : console.log("Successfully created index.html!")
+        fs.writeFile("testREADME.md", markdownPage, (err) =>
+            err ? console.log(err) : console.log(questions)
         );
       });
 };
