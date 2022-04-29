@@ -15,5 +15,4 @@ For additional information you can reach out at the GitHub account "NikolasMazur
 ## To-do
 As of right now the application is missing three components.
 1. The license generation based off of picked license needs to be finalized
-2. The function to write to the README is currently having an argumemnt error that needs to be resolved
-3. A GIF to show application functionality
+2. A GIF to show application functionality

@@ -101,6 +101,32 @@ const questions = () => {
         },
         {
             type: "input",
+            name: "year",
+            message: "Please enter year",
+            validate: yearInput => {
+                if (yearInput) {
+                    return true;
+                } else {
+                    console.log('Please enter current year to continue');
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
+            name: "name",
+            message: "Please enter your name",
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your name to continue');
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
             name: "github",
             message: "Please enter GitHub username.",
             validate: githubInput => {
